@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Homelayuot from "../components/homelayout";
 import Hero from "../components/Hero/hero";
 import Advan from "../components/advan/advan"
-
+import Services from "../components/Services/services";
 export default function Home() {
     return (
         <div>
@@ -13,8 +13,9 @@ export default function Home() {
             </Head>
 
             <Homelayuot>
-               <Hero/>
+                <Hero/>
                 <Advan/>
+                <Services/>
             </Homelayuot>
 
         </div>
