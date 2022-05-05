@@ -1,6 +1,8 @@
 import porter from "./../../assets/img/porter.png"
 import Image from "next/image"
 import bg from "./../../assets/img/bg.png"
+import Link from "next/link"
+
 export default function Hero() {
     return (
         <section className="hero">
@@ -11,7 +13,7 @@ export default function Hero() {
                             <li className="hero-general__desc" >Грузовые перевозки осуществляются 24/7</li>
                             <li className="hero-general__desc" >Организуем комфортный переезд по Бишкеку и по <span className="hero-general__desc__desc2">всему Кыргызстану!</span></li>
                             <li className="hero-general__item">Любим и гордимся своей работой</li>
-                        <button className="hero-general__btn">Вызвать</button>
+                   <Link href="#form"><a>      <button className="hero-general__btn">Вызвать</button></a></Link>
                     </div>
                     <div>
                         <div className="hero-general__bg">

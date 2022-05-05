@@ -1,0 +1,94 @@
+#description {
+  padding-top: 30px;
+
+  .description-general {
+    padding-bottom: 30px;
+
+    &__desc {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      text-align: center;
+      color: #000000;
+    }
+
+    &__title {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      text-align: center;
+      color: #000000;
+      margin-bottom: 80px;
+
+      span {
+        color: #0066FF;
+        margin-left: -8px;
+      }
+    }
+
+    &__contact {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+
+      a {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        text-align: center;
+        color: #000000;
+        padding: 0 50px;
+        margin-bottom: 50px;
+        transition: .4s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    &__nap {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      text-align: center;
+      color: #000000;
+      margin-bottom: 60px;
+
+      span {
+        color: #0066FF;
+        margin-left: -8px;
+      }
+    }
+
+    &__seti {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &__whatsapp {
+        color: #0066FF;
+        font-size: 60px;
+      }
+
+      i {
+        padding: 0 60px;
+        transition: .4s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      &__whatsapp2 {
+        color: #159600;
+        font-size: 60px;
+      }
+    }
+  }
+}

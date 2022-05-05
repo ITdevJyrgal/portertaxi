@@ -1,11 +1,8 @@
 import Images from "next/image"
-import por from "./../../assets/img/porter2.png"
-import gruz from "./../../assets/img/gruz.png"
-import meb from "./../../assets/img/meb.png"
-import mus from "./../../assets/img/mus.png"
-import sprinter from "./../../assets/img/sprinter.png"
+
 
 import Slider from "react-slick";
+import ServicesData from "./servicesData";
 
 export default function Services() {
     const settings = {
@@ -16,7 +13,7 @@ export default function Services() {
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1990,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3,
@@ -42,7 +39,7 @@ export default function Services() {
         ]
     };
     return (
-        <section className="services">
+        <section id="services">
             <div className="container">
                 <div className="services-general">
                     <div className="services-general__title">
@@ -52,48 +49,22 @@ export default function Services() {
 
                     <div>
                         <Slider {...settings}>
-                            <div className="services-general__block">
-                                <div className="services-general__block__square">
-                                    <div><Images src={por} alt="img"/></div>
-                                    <h1>Портер </h1>
-                                    <p>У нас имеются 20 <br/> портеров</p>
-                                    <h2>500 сом/час</h2>
-                                </div>
-                            </div>
-                            <div className="services-general__block">
-                                <div className="services-general__block__square">
-                                    <div><Images src={gruz} alt="img"/></div>
-                                    <h1>Грузчики</h1>
-                                    <p>Мы сотрудничаем с 80 <br/>грузчиками</p>
-                                    <h2>300 сом/час</h2>
-                                </div>
-                            </div>
-                            <div className="services-general__block">
-                                <div className="services-general__block__square">
-                                    <div><Images src={meb} alt="img"/></div>
-                                    <h1>Разборка/сборка мебели</h1>
-                                    <p>У нас имеются 20 портеров</p>
-                                    <h2>500 сом/час</h2>
-                                </div>
-                            </div>
-                            <div className="services-general__block">
-                                <div className="services-general__block__square">
-                                    <div><Images src={mus} alt="img"/></div>
-                                    <h1>Вывоз мусора</h1>
-                                    <p>Мы за чистый город и за <br/>чистый дом</p>
-                                    <h2>От 1000 сом</h2>
-                                </div>
-                            </div>
-                            <div className="services-general__block">
-                                <div className="services-general__block__square">
-                                    <div><Images src={sprinter} alt="img"/></div>
-                                    <h1>Спринтер</h1>
-                                    <p>У нас имеются 20 <br/> спринтеров</p>
-                                    <h2>500 сом/час</h2>
-                                </div>
-                            </div>
-
-
+                            {
+                                ServicesData.map(el => {
+                                    return (
+                                        <>
+                                            <div className="services-general__block" key={el.id}>
+                                                <div className="services-general__block__square">
+                                                    <div><Images src={el.img} alt="img"/></div>
+                                                    <h1>{el.title}</h1>
+                                                    <p>{el.item}</p>
+                                                    <h2>{el.desc}</h2>
+                                                </div>
+                                            </div>
+                                        </>
+                                    )
+                                })
+                            }
                         </Slider>
                     </div>
                 </div>

@@ -1,0 +1,40 @@
+@media (max-width: 1440px) {
+  .container {
+    width: 90%;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .hero-general {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .hero-general__img {
+    position: relative;
+    margin-left: 215px;
+    top: 20px;
+  }
+
+  .hero-general__bg {
+    top: 0;
+    right: 0;
+    z-index: -1;
+    position: absolute;
+  }
+  #services .services-general__block {
+    margin: 100px 66px;
+    position: relative;
+  }
+  #services .services-general__block__square p {
+    margin-bottom: 20px;
+  }
+  .slick-prev {
+    left: 63px;
+  }
+
+
+}

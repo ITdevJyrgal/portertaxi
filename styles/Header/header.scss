@@ -3,7 +3,7 @@
   position: fixed;
   background: rgba(0, 0, 0, 0.57);
   width: 100%;
-  z-index: 2;
+  z-index: 23456;
   backdrop-filter: blur(5px);
 
   &-general {
@@ -40,7 +40,8 @@
     &__square {
       width: 276px;
       height: 46px;
-      border: 2px solid #FFFFFF;
+      border-bottom: 2px solid #fff ;
+      //border: 2px solid #FFFFFF;
       box-sizing: border-box;
       display: flex;
       align-items: center;
@@ -62,3 +63,4 @@
     }
   }
 }
+

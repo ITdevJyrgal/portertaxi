@@ -1,16 +1,28 @@
+import Link from "next/link"
+// import Burgermenu from "./burgermenu";
+
 export default function Header() {
     return (
         <header className="header">
             <div className="container">
                 <div className="header-general">
                     <div>
-                        <h1 className="header-general__logo">Портер <span className="header-general__logo__logo">Такси</span></h1>
+                        <Link href="/"><a>
+                        <h1 className="header-general__logo">Портер <span
+                            className="header-general__logo__logo">Такси</span>
+                        </h1>
+                        </a></Link>
                     </div>
                     <div>
-                        <a href="#" className="header-general__nav" >Тарифы</a>
-                        <a href="#" className="header-general__nav" >Услуги</a>
-                        <a href="#" className="header-general__nav" >Контакты</a>
-
+                        <Link href="/rates">
+                            <a className="header-general__nav">Тарифы</a>
+                        </Link>
+                        <Link href="/#services">
+                            <a className="header-general__nav">Услуги</a>
+                        </Link>
+                        <Link href="/#description">
+                            <a className="header-general__nav">Контакты</a>
+                        </Link>
                     </div>
                     <div>
                         <div className="header-general__square">
@@ -24,6 +36,7 @@ export default function Header() {
                             <a href="tel:0509-13-99-66">0509-13-99-66</a>
                         </div>
                     </div>
+                    {/*<Burgermenu/>*/}
                 </div>
             </div>
         </header>

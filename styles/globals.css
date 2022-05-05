@@ -18,3 +18,7 @@ a {
   width: 85%;
   margin: 0 auto;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
