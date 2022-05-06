@@ -35,3 +35,14 @@
     margin-bottom: 20px;
   }
 }
+
+@media (max-width: 320px) {
+  #description .description-general__contact a {
+    font-size: 24px;
+  }
+
+  #description .description-general__seti i {
+    padding: 0 29px;
+    transition: .4s;
+  }
+}

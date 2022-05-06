@@ -143,4 +143,71 @@
     margin-bottom: 20px;
   }
 
+  .hero-general__cer {
+    width: 90%;
+    z-index: -1;
+    top: 10%;
+    position: absolute;
+    height: 600px;
+    border-radius: 50%;
+    background: #0066FF;
+  }
+  .hero-general__btn {
+    width: 184px;
+    margin-left: 98px;
+    border: 1px solid white;
+    height: 47px;
+  }
+
+  .slick-next {
+    right: 6px;
+  }
+  .hero {
+    overflow: hidden;
+  }
+
+}
+
+
+@media (max-width: 375px) {
+  .hero-general__btn {
+    width: 184px;
+    margin-left: 79px;
+    border: 1px solid white;
+    height: 47px;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .hero-general__desc {
+    font-size: 14px;
+    width: 90%;
+    color: white;
+    margin-left: 30px;
+  }
+
+  .hero-general__title {
+    font-size: 21px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero-general__item {
+    width: 90%;
+    font-size: 17px;
+    margin-left: 38px;
+    color: white;
+  }
+  .hero {
+    padding-top: 92px;
+  }
+  .hero-general__btn {
+    width: 184px;
+    margin-left: 53px;
+    border: 1px solid white;
+    height: 47px;
+  }
+
 }
