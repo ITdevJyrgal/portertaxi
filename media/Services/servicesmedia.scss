@@ -52,10 +52,12 @@
 @media (max-width: 450px) {
   .slick-prev {
     left: 10px;
+    z-index: 234;
   }
 
   .slick-next {
     right: -6px;
+    z-index: 234;
   }
 }
 
@@ -69,6 +71,20 @@
 
   .slick-next {
     right: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  #services .services-general__block__square div {
+    position: absolute;
+    z-index: 234;
+    margin-left: -12px;
+    top: -40px;
+    width: 250px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
   }
 }
 
