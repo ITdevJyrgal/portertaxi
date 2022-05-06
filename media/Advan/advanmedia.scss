@@ -1,0 +1,31 @@
+@media (max-width: 576px) {
+  .advan-general__title h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: -251px;
+    color: #000000;
+  }
+
+  .advan-general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .advan-general2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .advan-general__title h1 {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,146 @@
+@media (max-width: 1440px) {
+  .container {
+    width: 90%;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .hero-general {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+  }
+
+  .hero-general__img {
+    position: relative;
+    margin-left: 139px;
+    top: 20px;
+    width: 96%;
+  }
+
+  .hero-general__bg {
+    top: 0;
+    right: 0;
+    z-index: -1;
+    position: absolute;
+  }
+
+
+}
+
+@media (max-width: 1024px) {
+
+  .hero-general__img {
+    position: relative;
+    margin-left: 54px;
+    top: 20px;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .hero-general__img {
+    position: relative;
+    margin-left: 29px;
+    top: 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-general__img {
+    margin-left: 39px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-general__title {
+    font-size: 31px;
+    width: 90%;
+  }
+  .hero-general__desc {
+    font-size: 18px;
+    width: 90%;
+  }
+
+  .hero-general__img {
+    margin-left: 54px;
+    width: 100%;
+  }
+
+  .hero-general__btn {
+    width: 184px;
+    height: 47px;
+  }
+  .hero-general__bg {
+    right: -24px;
+  }
+  .hero-general__item {
+    width: 90%;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero-general__desc__desc2 {
+    padding-left: 0;
+  }
+  .hero-general__bg {
+    display: none;
+  }
+  .hero-general__cer {
+    width: 403px;
+    z-index: -1;
+    top: 10%;
+    position: absolute;
+    height: 600px;
+    border-radius: 50%;
+    background: #0066FF;
+  }
+  .hero-general__img {
+    margin-left: 40px;
+    width: 100%;
+  }
+  .hero-general__desc {
+    font-size: 18px;
+    width: 90%;
+    color: white;
+    margin-left: 30px;
+  }
+  .hero-general__item {
+    width: 90%;
+    margin-left: 30px;
+    color: white;
+  }
+
+  .hero-general__btn {
+    width: 184px;
+    margin-left: 113px;
+    border: 1px solid white;
+    height: 47px;
+  }
+
+}
+
+@media (max-width: 425px) {
+  .hero-general__img {
+    margin-left: 38px;
+    width: 100%;
+  }
+  .hero-general__item {
+    width: 90%;
+    margin-left: 55px;
+    color: white;
+  }
+  .hero-general__title {
+    font-size: 26px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+}

@@ -3,9 +3,7 @@
 
 
 @import "./../styles/Header/header";
-@import "./../styles/Header/headermedia";
 @import "./../styles/Hero/hero";
-@import "./../styles/Hero/heromedia";
 @import "./../styles/Advan/advan";
 @import "./../styles/Services/services";
 @import "./../styles/Form/form";
@@ -13,7 +11,17 @@
 @import "./../styles/Rates/rates";
 @import "./../styles/Footer/footer";
 
+//-----------media----------//
 
+@import "../media/Header/headermedia";
+@import "../media/Hero/heromedia";
+@import "../media/Services/servicesmedia";
+@import "../media/Advan/advanmedia";
+@import "../media/Form/formmedia";
+@import "../media/Description/description";
+@import "../media/Footer/footermedia";
+
+//-----------media----------//
 
 
 //-------------icons------------//

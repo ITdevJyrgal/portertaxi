@@ -7,22 +7,25 @@ import ServicesData from "./servicesData";
 export default function Services() {
     const settings = {
         dots: false,
+        arrows: true,
         infinite: true,
-        speed: 500,
+        // autoplay: true,
+        // speed: 3000,
+        // autoplaySpeed: 2000,
         slidesToShow: 4,
-        slidesToScroll: 1,
+        slidesToScroll: 4,
         responsive: [
             {
-                breakpoint: 1990,
+                breakpoint: 1200,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3,
                     infinite: true,
-                    dots: true
+                    dots: false
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
@@ -30,10 +33,11 @@ export default function Services() {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 576,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+
                 }
             }
         ]

@@ -10,15 +10,19 @@ export default function Hero() {
                 <div className="hero-general">
                     <div>
                         <h1 className="hero-general__title">ПЕРЕЕЗД ДОМОВ, КВАРТИР И ОФИСОВ</h1>
-                            <li className="hero-general__desc" >Грузовые перевозки осуществляются 24/7</li>
-                            <li className="hero-general__desc" >Организуем комфортный переезд по Бишкеку и по <span className="hero-general__desc__desc2">всему Кыргызстану!</span></li>
-                            <li className="hero-general__item">Любим и гордимся своей работой</li>
-                   <Link href="#form"><a>      <button className="hero-general__btn">Вызвать</button></a></Link>
+                        <li className="hero-general__desc">Грузовые перевозки осуществляются 24/7</li>
+                        <li className="hero-general__desc">Организуем комфортный переезд по Бишкеку и по <span
+                            className="hero-general__desc__desc2">всему Кыргызстану!</span></li>
+                        <li className="hero-general__item">Любим и гордимся своей работой</li>
+                        <Link href="#form"><a>
+                            <button className="hero-general__btn">Вызвать</button>
+                        </a></Link>
                     </div>
                     <div>
                         <div className="hero-general__bg">
                             <Image src={bg} alt="img"/>
                         </div>
+                        <div className="hero-general__cer"/>
                         <div className="hero-general__img">
                             <Image src={porter} alt="img"/>
                         </div>
