@@ -24,7 +24,7 @@ export default function Footer() {
                     <div className="footer-general2__motion">
                         <h1>Все права защищены - 2022</h1>
                     </div>
-                    <a href="https://www.motion-web.io/" target="_blank">
+                    <a href="https://www.motion-web.io/" >
                         <div className="footer-general2__motion2">
 
                    <span>
