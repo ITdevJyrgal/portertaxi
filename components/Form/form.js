@@ -98,11 +98,13 @@ export default function Form() {
                                 <label className="form-general__area">
                                     <input type="text" placeholder="Комментарии к заказу (необязательно)" name='text'/>
                                 </label>
-                                <input type="submit"
-                                       onClick={() => setActive(true)}
-                                       className="form-general__btn"
-                                       placeholder="Заказать"
-                                />
+                           <div className="form-general__submit">
+                               <input type="submit"
+                                      onClick={() => setActive(true)}
+                                      className="form-general__btn"
+                                      placeholder="Заказать"
+                               />
+                           </div>
                             </label>
                         </form>
 

@@ -1,14 +1,9 @@
-@media (max-width: 1200px) {
-  #form .form-general__btn {
-    margin-left: 32%;
-  }
-
-}
-
 @media (max-width: 1024px) {
-  #form .form-general__btn {
-    margin-left: 30%;
-  }
+ .form-general__submit {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
 }
 
 @media (max-width: 768px) {
@@ -30,7 +25,6 @@
   }
 
   #form .form-general__btn {
-    margin-left: 33%;
     height: 57px;
     width: 231px;
     font-size: 20px;
@@ -43,15 +37,10 @@
     font-size: 30px;
   }
 
-  #form .form-general__btn {
-    margin-left: 27%;
-  }
-
 }
 
 @media (max-width: 450px) {
   #form .form-general__btn {
-    margin-left: 25%;
     width: 200px;
     height: 45px;
   }
@@ -75,7 +64,6 @@
 
 @media (max-width: 375px) {
   #form .form-general__btn {
-    margin-left: 20%;
     width: 200px;
     height: 45px;
   }
@@ -83,7 +71,6 @@
 
 @media (max-width: 320px) {
   #form .form-general__btn {
-    margin-left: 14%;
     width: 200px;
     height: 45px;
   }
