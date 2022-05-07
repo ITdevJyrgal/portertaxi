@@ -1,10 +1,11 @@
 import {useEffect, useState} from "react";
 import Image from "next/image";
 import check from "./../../assets/img/check.png"
+import React from "react";
+
 
 export default function Form() {
     const [active, setActive] = useState(false)
-
     return (
         <section id="form">
             <div className="container">
@@ -13,14 +14,18 @@ export default function Form() {
                     <div
                         className={active ? 'form-general__div active' : 'form-general__div'}
                     >
+                        <label>
                             <div className="form-general__title">
                                 <h1>Есть груз <span>прямо сейчас?</span></h1>
                             </div>
+
+
                             <label className="form-general__input">
-                                <input
-                                    type="text" name="name" placeholder="Ф.И.О"/>
-                                <input type="tel" name="tel" placeholder="Номер вашего телефона"/>
+                                <input type="text" name="name" placeholder="Ф.И.О"  className="form-general__input__input" />
+                                <input type="tel" name="tel" placeholder="Номер вашего телефона" className="form-general__input__input" />
                             </label>
+
+
                             <div className="form-general__item">
                                 <h1>Выберите <span>подходящие</span> услуги</h1>
                             </div>
@@ -43,7 +48,6 @@ export default function Form() {
                                 </label>
 
                             </div>
-
                             <label className="form-general__area">
                                 <input type="text" placeholder="Комментарии к заказу (необязательно)" name='text'/>
                             </label>
@@ -52,6 +56,9 @@ export default function Form() {
                                    className="form-general__btn"
                                    placeholder="Заказать"
                             />
+                        </label>
+
+
                     </div>
                     <div className={active ? "form-general__successful block" : "form-general__successful"}>
                         <div>

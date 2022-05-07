@@ -8,9 +8,9 @@ export default function Header() {
                 <div className="header-general">
                     <div>
                         <Link href="/"><a>
-                        <h1 className="header-general__logo">Портер <span
-                            className="header-general__logo__logo">Такси</span>
-                        </h1>
+                            <h1 className="header-general__logo">Портер <span
+                                className="header-general__logo__logo">Такси</span>
+                            </h1>
                         </a></Link>
                     </div>
                     <div>
@@ -30,7 +30,7 @@ export default function Header() {
                             <i className="fab fa-whatsapp"/>
                             <a href="tel:0504416833">0504-41-68-33</a>
                         </div>
-                        <div className="header-general__square">
+                        <div className="header-general__square2">
                             <i className="fab fa-telegram"/>
                             <i className="fab fa-whatsapp"/>
                             <a href="tel:0509-13-99-66">0509-13-99-66</a>

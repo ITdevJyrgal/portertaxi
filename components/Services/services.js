@@ -9,9 +9,9 @@ export default function Services() {
         dots: false,
         arrows: true,
         infinite: true,
-        // autoplay: true,
-        // speed: 3000,
-        // autoplaySpeed: 2000,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
         slidesToShow: 4,
         slidesToScroll: 4,
         responsive: [

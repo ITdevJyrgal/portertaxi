@@ -29,7 +29,12 @@
       flex-direction: column;
       margin-bottom: 40px;
 
-      input {
+      p {
+        color: #bf1650;
+      }
+
+
+        &__input {
         width: 606px;
         font-family: 'Montserrat', sans-serif;
         font-style: normal;

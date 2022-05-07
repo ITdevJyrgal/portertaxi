@@ -61,6 +61,29 @@
         padding-left: 10px;
       }
     }
+    &__square2 {
+      width: 276px;
+      height: 46px;
+      //border: 2px solid #FFFFFF;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+
+      i {
+        font-size: 22px;
+        padding: 0 7px;
+        color: white;
+      }
+
+      a {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        color: #FFFFFF;
+        padding-left: 10px;
+      }
+    }
   }
 }
 
