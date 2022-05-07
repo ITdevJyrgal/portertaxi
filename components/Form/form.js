@@ -63,20 +63,23 @@ export default function Form() {
                                     <h1>Выберите <span>подходящие</span> услуги</h1>
                                 </div>
                                 <div className="form-general__radio">
-                                    <label>
-                                        <input type="checkbox" name="radio"
+                                 <div>
+                                     <label>
+                                         <input type="checkbox" name="radio"
 
-                                               className={errors.name ? "form-general__radio__input__errors" : "form-general__radio__input"}
+                                                className={errors.name ? "form-general__radio__input__errors" : "form-general__radio__input"}
 
-                                        />
-                                        <p>Портер</p>
-                                    </label>
-                                    <label>
-                                        <input type="checkbox" name="radio"
+                                         />
+                                         <p>Портер</p>
+                                     </label>
+                                     <label>
+                                         <input type="checkbox" name="radio"
 
-                                               className={errors.name ? "form-general__radio__input__errors" : "form-general__radio__input"}/>
-                                        <p>Грузчики</p>
-                                    </label>
+                                                className={errors.name ? "form-general__radio__input__errors" : "form-general__radio__input"}/>
+                                         <p>Грузчики</p>
+                                     </label>
+                                 </div>
+                                <div>
                                     <label>
                                         <input type="checkbox" name="radio"
 
@@ -89,6 +92,7 @@ export default function Form() {
                                                className={errors.name ? "form-general__radio__input__errors" : "form-general__radio__input"}/>
                                         <p>Вывоз мусора</p>
                                     </label>
+                                </div>
 
                                 </div>
                                 <label className="form-general__area">
