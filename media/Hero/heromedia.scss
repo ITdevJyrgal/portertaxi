@@ -90,9 +90,13 @@
   .hero-general__bg {
     display: none;
   }
+  .hero {
+    padding: 170px 10px 0 10px;
+  }
   .hero-general__cer {
-    width: 403px;
+    width: 600px;
     z-index: -1;
+    right: 9px;
     top: 10%;
     position: absolute;
     height: 600px;
@@ -115,9 +119,14 @@
     color: white;
   }
 
+  .hero-general__btn__gen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .hero-general__btn {
     width: 184px;
-    margin-left: 113px;
     border: 1px solid white;
     height: 47px;
   }
@@ -131,28 +140,16 @@
   }
   .hero-general__item {
     width: 90%;
-    margin-left: 55px;
     color: white;
   }
   .hero-general__title {
     font-size: 26px;
-    text-align: center;
     width: 100%;
     margin-bottom: 20px;
   }
 
-  .hero-general__cer {
-    width: 90%;
-    z-index: -1;
-    top: 10%;
-    position: absolute;
-    height: 600px;
-    border-radius: 50%;
-    background: #0066FF;
-  }
   .hero-general__btn {
     width: 184px;
-    margin-left: 98px;
     border: 1px solid white;
     height: 47px;
   }
@@ -166,7 +163,6 @@
 @media (max-width: 380px) {
   .hero-general__btn {
     width: 184px;
-    margin-left: 77px;
     border: 1px solid white;
     height: 47px;
   }
@@ -175,7 +171,6 @@
 @media (max-width: 375px) {
   .hero-general__btn {
     width: 184px;
-    margin-left: 79px;
     border: 1px solid white;
     height: 47px;
   }
@@ -187,7 +182,6 @@
     font-size: 14px;
     width: 90%;
     color: white;
-    margin-left: 30px;
   }
 
   .hero-general__title {
@@ -200,7 +194,6 @@
   .hero-general__item {
     width: 90%;
     font-size: 17px;
-    margin-left: 38px;
     color: white;
   }
   .hero {
@@ -208,7 +201,6 @@
   }
   .hero-general__btn {
     width: 184px;
-    margin-left: 53px;
     border: 1px solid white;
     height: 47px;
   }

@@ -14,10 +14,14 @@ export default function Hero() {
                         <li className="hero-general__desc">Организуем комфортный переезд по Бишкеку и по <span
                             className="hero-general__desc__desc2">всему Кыргызстану!</span></li>
                         <li className="hero-general__item">Любим и гордимся своей работой</li>
-                        <Link href="#form"><a>
+                      <div className="hero-general__btn__gen">
+
+                      <Link href="#form"><a>
                             <button className="hero-general__btn">Вызвать</button>
                         </a></Link>
-                    </div>
+
+                      </div>
+                </div>
                     <div>
                         <div className="hero-general__bg">
                             <Image src={bg} alt="img"/>
