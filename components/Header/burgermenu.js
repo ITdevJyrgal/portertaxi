@@ -18,7 +18,7 @@ function Navbar() {
                 <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
                     <ul className="nav-menu-items">
 
-                        <li>
+                        <li onClick={() => setSidebar(false)}>
                             <Link href={"/"}>
                                 <a>
                                     Домой
@@ -27,7 +27,7 @@ function Navbar() {
 
                         </li>
 
-                        <li>
+                        <li onClick={() => setSidebar(false)}>
                             <Link href={"/rates"}>
                                 <a>
                                     Тарифы
@@ -35,16 +35,14 @@ function Navbar() {
                             </Link>
 
                         </li>
-                        <li>
-
+                        <li onClick={() => setSidebar(false)}>
                             <Link href={"/#services"}>
                                 <a>
                                     Услуги
                                 </a>
                             </Link>
                         </li>
-                        <li>
-
+                        <li onClick={() => setSidebar(false)}>
                             <Link href={"/#description"}>
                                 <a>
                                     Контакты
