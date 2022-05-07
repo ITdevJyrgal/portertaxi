@@ -92,9 +92,14 @@
         flex-direction: column;
       }
 
-      input {
+      &__input {
         width: 30px;
         height: 30px;
+        &__errors {
+          width: 30px;
+          height: 30px;
+          background: rgba(255, 0, 0, 0.77);
+        }
       }
     }
 

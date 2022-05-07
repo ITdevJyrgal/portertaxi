@@ -3,6 +3,8 @@ import Image from "next/image";
 import check from "./../../assets/img/check.png"
 import React from "react";
 import {useForm} from "react-hook-form";
+import {error} from "next/dist/build/output/log";
+import axios from "axios"
 
 
 export default function Form() {
@@ -40,7 +42,7 @@ export default function Form() {
                                 <label className="form-general__input"
                                        onSubmit={handleSubmit(onSubmit)}>
                                     <input type="text" name="name" placeholder="Ф.И.О"
-                                           className={ errors.name ? "form-general__input__input__error" : "form-general__input__input"}
+                                           className={errors.name ? "form-general__input__input__error" : "form-general__input__input"}
                                            {...register("firstName", {
                                                required: true,
                                                maxLength: 20,
@@ -62,19 +64,29 @@ export default function Form() {
                                 </div>
                                 <div className="form-general__radio">
                                     <label>
-                                        <input type="checkbox" name="radio"/>
+                                        <input type="checkbox" name="radio"
+
+                                               className={errors.name ? "form-general__radio__input__errors" : "form-general__radio__input"}
+
+                                        />
                                         <p>Портер</p>
                                     </label>
                                     <label>
-                                        <input type="checkbox" name="radio"/>
+                                        <input type="checkbox" name="radio"
+
+                                               className={errors.name ? "form-general__radio__input__errors" : "form-general__radio__input"}/>
                                         <p>Грузчики</p>
                                     </label>
                                     <label>
-                                        <input type="checkbox" name="radio"/>
+                                        <input type="checkbox" name="radio"
+
+                                               className={errors.name ? "form-general__radio__input__errors" : "form-general__radio__input"}/>
                                         <p>Разборка/сборка мебели</p>
                                     </label>
                                     <label>
-                                        <input type="checkbox" name="radio"/>
+                                        <input type="checkbox" name="radio"
+
+                                               className={errors.name ? "form-general__radio__input__errors" : "form-general__radio__input"}/>
                                         <p>Вывоз мусора</p>
                                     </label>
 

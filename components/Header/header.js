@@ -1,5 +1,5 @@
 import Link from "next/link"
-// import Burgermenu from "./burgermenu";
+import Burgermenu from "./burgermenu";
 
 export default function Header() {
     return (
@@ -36,7 +36,7 @@ export default function Header() {
                             <a href="tel:0509-13-99-66">0509-13-99-66</a>
                         </div>
                     </div>
-                    {/*<Burgermenu/>*/}
+                    <Burgermenu/>
                 </div>
             </div>
         </header>
