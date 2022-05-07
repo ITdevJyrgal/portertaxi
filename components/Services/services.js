@@ -10,10 +10,10 @@ export default function Services() {
         arrows: true,
         infinite: true,
         autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 2000,
+        speed: 1000,
+        autoplaySpeed: 1000,
         slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToScroll: 1,
         responsive: [
             {
                 breakpoint: 1200,
