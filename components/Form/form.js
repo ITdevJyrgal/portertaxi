@@ -1,11 +1,27 @@
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import Image from "next/image";
 import check from "./../../assets/img/check.png"
 import React from "react";
+import {useForm} from "react-hook-form";
 
 
 export default function Form() {
     const [active, setActive] = useState(false)
+
+
+    const {
+        register,
+        handleSubmit,
+        watch,
+        formState: {errors}
+    } = useForm();
+
+    const onSubmit = (data) => {
+        alert(JSON.stringify(data));
+    };
+
+    console.log(watch("example"));
+
     return (
         <section id="form">
             <div className="container">
@@ -14,49 +30,65 @@ export default function Form() {
                     <div
                         className={active ? 'form-general__div active' : 'form-general__div'}
                     >
-                        <label>
-                            <div className="form-general__title">
-                                <h1>Есть груз <span>прямо сейчас?</span></h1>
-                            </div>
+                        <form onSubmit={handleSubmit(onSubmit)}>
+                            <label>
+                                <div className="form-general__title">
+                                    <h1>Есть груз <span>прямо сейчас?</span></h1>
+                                </div>
 
 
-                            <label className="form-general__input">
-                                <input type="text" name="name" placeholder="Ф.И.О"  className="form-general__input__input" />
-                                <input type="tel" name="tel" placeholder="Номер вашего телефона" className="form-general__input__input" />
+                                <label className="form-general__input"
+                                       onSubmit={handleSubmit(onSubmit)}>
+                                    <input type="text" name="name" placeholder="Ф.И.О"
+                                           className={ errors.name ? "form-general__input__input__error" : "form-general__input__input"}
+                                           {...register("firstName", {
+                                               required: true,
+                                               maxLength: 20,
+                                               pattern: /^[A-Za-z]+$/i
+                                           })}
+                                    />
+
+
+                                    <input type="tel" name="tel" placeholder="Номер вашего телефона"
+                                           className="form-general__input__input"
+                                           {...register("Number", {pattern: /^[A-Za-z]+$/i})}
+                                    />
+
+                                </label>
+
+
+                                <div className="form-general__item">
+                                    <h1>Выберите <span>подходящие</span> услуги</h1>
+                                </div>
+                                <div className="form-general__radio">
+                                    <label>
+                                        <input type="checkbox" name="radio"/>
+                                        <p>Портер</p>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="radio"/>
+                                        <p>Грузчики</p>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="radio"/>
+                                        <p>Разборка/сборка мебели</p>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="radio"/>
+                                        <p>Вывоз мусора</p>
+                                    </label>
+
+                                </div>
+                                <label className="form-general__area">
+                                    <input type="text" placeholder="Комментарии к заказу (необязательно)" name='text'/>
+                                </label>
+                                <input type="submit"
+                                       onClick={() => setActive(true)}
+                                       className="form-general__btn"
+                                       placeholder="Заказать"
+                                />
                             </label>
-
-
-                            <div className="form-general__item">
-                                <h1>Выберите <span>подходящие</span> услуги</h1>
-                            </div>
-                            <div className="form-general__radio">
-                                <label>
-                                    <input type="checkbox" name="radio"/>
-                                    <p>Портер</p>
-                                </label>
-                                <label>
-                                    <input type="checkbox" name="radio"/>
-                                    <p>Грузчики</p>
-                                </label>
-                                <label>
-                                    <input type="checkbox" name="radio"/>
-                                    <p>Разборка/сборка мебели</p>
-                                </label>
-                                <label>
-                                    <input type="checkbox" name="radio"/>
-                                    <p>Вывоз мусора</p>
-                                </label>
-
-                            </div>
-                            <label className="form-general__area">
-                                <input type="text" placeholder="Комментарии к заказу (необязательно)" name='text'/>
-                            </label>
-                            <input type="submit"
-                                   onClick={() => setActive(true)}
-                                   className="form-general__btn"
-                                   placeholder="Заказать"
-                            />
-                        </label>
+                        </form>
 
 
                     </div>
