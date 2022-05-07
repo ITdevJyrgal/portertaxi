@@ -165,9 +165,21 @@
   .hero {
     overflow: hidden;
   }
+  .header-general__nav {
+display: block;
+  }
+
 
 }
 
+@media (max-width: 380px) {
+  .hero-general__btn {
+    width: 184px;
+    margin-left: 77px;
+    border: 1px solid white;
+    height: 47px;
+  }
+}
 
 @media (max-width: 375px) {
   .hero-general__btn {
