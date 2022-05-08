@@ -28,7 +28,7 @@
 
 
     &__block {
-      margin: 100px 45px;
+      margin: 50px 45px;
       position: relative;
 
       &__square {
@@ -93,7 +93,7 @@
 .slick-prev {
   position: absolute;
   z-index: 34;
-  margin-top: 250px;
+  margin-top: 182px;
   font-size: 0;
   width: 50px;
   height: 50px;
@@ -109,7 +109,7 @@
   position: absolute;
   z-index: 34;
   right: 70px;
-  margin-top: -294px;
+  margin-top: -262px;
   width: 50px;
   height: 50px;
   object-fit: contain;
@@ -119,3 +119,21 @@
   border: none;
   font-size: 0;
 }
+
+//.slick-dots {
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//  font-size: 0;
+//  margin: 30px 0;
+//}
+//
+//
+//.slick-dots .slick-active {
+//  background: #0066FF;
+//  border-radius: 50%;
+//  width: 10px;
+//  height: 10px;
+//  font-size: 0;
+//  margin: 0 50px;
+//}

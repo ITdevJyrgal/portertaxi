@@ -8,9 +8,11 @@ export default function Services() {
     const settings = {
         dots: false,
         arrows: true,
+        centerMode: true,
         infinite: true,
         autoplay: true,
         speed: 1000,
+        variableWidth: true,
         autoplaySpeed: 1000,
         slidesToShow: 4,
         slidesToScroll: 1,
