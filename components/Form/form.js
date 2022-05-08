@@ -51,7 +51,7 @@ export default function Form() {
                                     />
 
 
-                                    <input type="tel" name="tel" placeholder="Номер вашего телефона"
+                                    <input type="number" name="tel" placeholder="Номер вашего телефона"
                                            className="form-general__input__input"
                                            {...register("Number", {pattern: /^[A-Za-z]+$/i})}
                                     />
