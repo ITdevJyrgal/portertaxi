@@ -1,9 +1,17 @@
 @media (max-width: 1024px) {
- .form-general__submit {
-   display: flex;
-   justify-content: center;
-   align-items: center;
- }
+  .form-general__submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-general__radio {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 150px;
+    align-items: center;
+    margin-bottom: 40px;
+
+  }
 }
 
 @media (max-width: 768px) {
@@ -44,7 +52,6 @@
     width: 200px;
     height: 45px;
   }
-
 
 
   #form .form-general__radio label {
