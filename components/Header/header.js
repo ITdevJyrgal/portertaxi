@@ -28,7 +28,7 @@ export default function Header() {
                         <div className="header-general__square">
                             <i className="fab fa-telegram"/>
                             <i className="fab fa-whatsapp"/>
-                            <a href="tel:0504416833">0504-41-68-33</a>
+                            <a href="tel:0504416833">0557-41-14-42</a>
                         </div>
                         <div className="header-general__square2">
                             <i className="fab fa-telegram"/>

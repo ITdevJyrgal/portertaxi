@@ -20,8 +20,8 @@ export default function Description() {
                     <div>
                         <h1 className="description-general__title">Кон <span>такты</span></h1>
                         <div className="description-general__contact">
-                            <a href="tel:0555-07-12-39">0555-07-12-39</a>
-                            <a href="tel:0704-72-28-62">0704-72-28-62</a>
+                            <a href="tel:0555-07-12-39">0557-41-14-42</a>
+                            <a href="tel:0704-72-28-62">0509-13-99-66</a>
                         </div>
                     </div>
                     <div>
