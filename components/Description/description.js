@@ -27,10 +27,15 @@ export default function Description() {
                     <div>
                         <h1 className="description-general__nap">Напи <span>сать</span></h1>
                         <div className="description-general__seti">
-                            <span className="description-general__seti__whatsapp"> <i
-                                className="fab fa-telegram"/></span>
-                            <span className="description-general__seti__whatsapp2"><i
-                                className="fab fa-whatsapp"/></span>
+                            <span className="description-general__seti__whatsapp">
+                                <a href="https://t.me/talant202">
+                                <i className="fab fa-telegram"/>
+                                </a>
+                            </span>
+                            <span className="description-general__seti__whatsapp2">
+                               <a href="https://wa.me/qr/62UF2ON437RNA1"> <i className="fab fa-whatsapp"/></a>
+
+                            </span>
                         </div>
                     </div>
                 </div>

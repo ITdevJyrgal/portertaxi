@@ -13,7 +13,7 @@ export default function Hero() {
                         <li className="hero-general__desc">Грузовые перевозки осуществляются 24/7</li>
                         <li className="hero-general__desc">Организуем комфортный переезд по Бишкеку и по <span
                             className="hero-general__desc__desc2">всему Кыргызстану!</span></li>
-                        <li className="hero-general__desc">Вывоз строительных мусоров</li>
+                        <li className="hero-general__desc">Вывоз строительных мусоров (от 1200 сом)</li>
                         <li className="hero-general__item">Любим и гордимся своей работой</li>
                       <div className="hero-general__btn__gen">
 

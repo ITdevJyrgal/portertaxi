@@ -69,20 +69,20 @@ export default function Rates() {
                             </div>
                             <div>
                                 <div className="rates-general__block">
-                                    <p className="rates-general__item">Расценки на транспорт за пределы г. Бишкек (до
+                                    <p className="rates-general__item">По регионам (до
                                         2тонн)</p>
                                 </div>
                                 <div className="rates-general__block2">
                                     <p>Сокулук, Кант</p>
-                                    <p>1200с.</p>
+                                    <p>1500с.</p>
                                 </div>
                                 <div className="rates-general__block3">
                                     <p>Беловодск, Аэропорт Манас</p>
-                                    <p>1500с.</p>
+                                    <p>2000с.</p>
                                 </div>
                                 <div className="rates-general__block2">
                                     <p>Кун-Туу, Мраморное,Нижний СЭЗ </p>
-                                    <p>1000с.</p>
+                                    <p>1200с.</p>
                                 </div>
                                 <div className="rates-general__block3">
                                     <p>Арашан,Чон-Таш </p>
@@ -93,16 +93,16 @@ export default function Rates() {
                                     <p>1500с.</p>
                                 </div>
                                 <div className="rates-general__block3">
-                                    <p>Новопакровка,пос Дачный,Дружба, Военантоновка</p>
-                                    <p>800с.</p>
+                                    <p>Иссык-куль, Кара-кол</p>
+                                    <p>договорная.</p>
                                 </div>
                                 <div className="rates-general__block2">
-                                    <p>Лебединовка, Дордой , Джал, Ак-Ордо  </p>
-                                    <p>700с.</p>
+                                    <p> Нарын, Кочкор, Ат-Башы </p>
+                                    <p>договорная.</p>
                                 </div>
                                 <div className="rates-general__block3">
-                                    <p>Горная Маевка ,Мирное,Крас. Речка </p>
-                                    <p>2000с.</p>
+                                    <p>Кемин, Токмок </p>
+                                    <p>договорная.</p>
                                 </div>
                                 <div className="rates-general__block2">
                                     <p>Бирлик,Жаны-Жер, Джаны-Пахта,
@@ -112,7 +112,7 @@ export default function Rates() {
                                 <div className="rates-general__block3">
                                     <p>Беш-Кунгой,с.Джал, Маловодное,
                                         сов Ала-Тоо,Кой Таш,Байтик </p>
-                                    <p>800с.</p>
+                                    <p>1200с.</p>
                                 </div>
 
                             </div>
