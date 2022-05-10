@@ -10,19 +10,41 @@ import axios from "axios"
 export default function Form() {
     const [active, setActive] = useState(false)
 
+    // const {
+    //     register,
+    //     handleSubmit,
+    //     watch,
+    //     formState: {errors}
+    // } = useForm();
+    //
+    // const onSubmit = (data) => {
+    //     alert(JSON.stringify(data));
+    // };
+    //
+    // console.log(watch("example"));
 
-    const {
-        register,
-        handleSubmit,
-        watch,
-        formState: {errors}
-    } = useForm();
+    const [value, setValue] = useState({
+        name: "",
+        phone: ""
+    })
+    const valueHandler = (e) => {
+        setValue(
+            {...value, [e.target.name]: e.target.value},
+            {...value, [e.target.phone]: e.target.value}
+        )
+    }
+    const [vdata, setVdata] = useState([])
 
-    const onSubmit = (data) => {
-        alert(JSON.stringify(data));
+
+    const {register, handleSubmit, formState: {errors}} = useForm();
+    const onSubmit = data => {
+        axios.post("https://porter-project.herokuapp.com/feedback/", data)
+            .then(() => alert("Успешно отправлено!"))
+        setVdata(data)
+        console.log(data)
     };
+    console.log(errors);
 
-    console.log(watch("example"));
 
     return (
         <section id="form">
@@ -43,17 +65,19 @@ export default function Form() {
                                        onSubmit={handleSubmit(onSubmit)}>
                                     <input type="text" name="name" placeholder="Ф.И.О"
                                            className={errors.name ? "form-general__input__input__error" : "form-general__input__input"}
-                                           {...register("firstName", {
-                                               required: true,
-                                               maxLength: 20,
-                                               pattern: /^[A-Za-z]+$/i
-                                           })}
+                                           {...register("name", {required: true, maxLength: 80})}
                                     />
 
 
-                                    <input type="number" name="tel" placeholder="Номер вашего телефона"
-                                           className="form-general__input__input"
-                                           {...register("Number", {pattern: /^[A-Za-z]+$/i})}
+                                    <input type="tel" name="tel" placeholder="Номер вашего телефона"
+
+                                           className={errors.phone ? "form-general__input__input__error" : "form-general__input__input"}
+                                           {
+                                               ...register("phone", {
+                                                   required: true,
+                                                   maxLength: 100
+                                               })
+                                           }
                                     />
 
                                 </label>
@@ -63,48 +87,48 @@ export default function Form() {
                                     <h1>Выберите <span>подходящие</span> услуги</h1>
                                 </div>
                                 <div className="form-general__radio">
-                                 <div>
-                                     <label>
-                                         <input type="checkbox" name="radio"
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" name="radio"
 
-                                                className={errors.name ? "form-general__radio__input__errors" : "form-general__radio__input"}
+                                                   className={errors.name ? "form-general__radio__input__errors" : "form-general__radio__input"}
 
-                                         />
-                                         <p>Портер</p>
-                                     </label>
-                                     <label>
-                                         <input type="checkbox" name="radio"
+                                            />
+                                            <p>Портер</p>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="radio"
 
-                                                className={errors.name ? "form-general__radio__input__errors" : "form-general__radio__input"}/>
-                                         <p>Грузчики</p>
-                                     </label>
-                                 </div>
-                                <div>
-                                    <label>
-                                        <input type="checkbox" name="radio"
+                                                   className={errors.name ? "form-general__radio__input__errors" : "form-general__radio__input"}/>
+                                            <p>Грузчики</p>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" name="radio"
 
-                                               className={errors.name ? "form-general__radio__input__errors" : "form-general__radio__input"}/>
-                                        <p>Разборка/сборка мебели</p>
-                                    </label>
-                                    <label>
-                                        <input type="checkbox" name="radio"
+                                                   className={errors.name ? "form-general__radio__input__errors" : "form-general__radio__input"}/>
+                                            <p>Разборка/сборка мебели</p>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="radio"
 
-                                               className={errors.name ? "form-general__radio__input__errors" : "form-general__radio__input"}/>
-                                        <p>Вывоз мусора</p>
-                                    </label>
-                                </div>
+                                                   className={errors.name ? "form-general__radio__input__errors" : "form-general__radio__input"}/>
+                                            <p>Вывоз мусора</p>
+                                        </label>
+                                    </div>
 
                                 </div>
                                 <label className="form-general__area">
                                     <input type="text" placeholder="Комментарии к заказу (необязательно)" name='text'/>
                                 </label>
-                           <div className="form-general__submit">
-                               <input type="submit"
-                                      onClick={() => setActive(true)}
-                                      className="form-general__btn"
-                                      placeholder="Заказать"
-                               />
-                           </div>
+                                <div className="form-general__submit">
+                                    <input type="submit"
+                                           onClick={() => setActive(true)}
+                                           className="form-general__btn"
+                                           placeholder="Заказать"
+                                    />
+                                </div>
                             </label>
                         </form>
 
