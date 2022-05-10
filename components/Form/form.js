@@ -71,7 +71,7 @@ export default function Form() {
                                     />
 
 
-                                    <input type="number" name="tel" placeholder="Номер вашего телефона"
+                                    <input type="tel" name="tel" placeholder="Номер вашего телефона"
                                            style={errors.phone && {borderBottom: " 2px solid red"}}
                                            className="form-general__input__input"
                                            {...register("phone", {required: true})}
