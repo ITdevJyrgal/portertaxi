@@ -127,6 +127,7 @@ export default function Form() {
                                     <input type="submit"
                                            className="form-general__btn"
                                            placeholder="Заказать"
+                                           onClick={() => setActive(true)}
                                     />
                                 </div>
                             </label>
@@ -134,7 +135,7 @@ export default function Form() {
 
 
                     </div>
-                    <div className={active ? "form-general__successful block" : "form-general__successful"}>
+                    <div className={active ? "form-general__successful  block" : "form-general__successful"}>
                         <div>
                             <h1>Ваш з<span>аказ пр</span>инят!</h1>
                             <p>Мы вам перезвоним ближайщие секунды с потврерждением. </p>
