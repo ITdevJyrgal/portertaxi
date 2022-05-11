@@ -123,11 +123,13 @@ export default function Form() {
                                     <input type="text" placeholder="Комментарии к заказу (необязательно)"
                                            name='text' {...register("description")}/>
                                 </label>
-                                <div className="form-general__submit">
+                                <div className="form-general__submit"
+                                onClick={() => setActive(true)}
+                                >
                                     <input type="submit"
                                            className="form-general__btn"
                                            placeholder="Заказать"
-                                           onClick={() => setActive(true)}
+
                                     />
                                 </div>
                             </label>
