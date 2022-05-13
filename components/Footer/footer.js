@@ -14,7 +14,7 @@ export default function Footer() {
                         <h1 className="footer-general__title "> ПортерТакси</h1>
                     </div>
                     <div className="footer-general__contact">
-                        <a href="tel:0504-41-68-33">0504-41-68-33</a>
+                        <a href="tel:0557-41-14-42">0557-41-14-42</a>
                         <a href="tel:0509-13-99-66">0509-13-99-66</a>
                     </div>
 

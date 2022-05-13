@@ -124,7 +124,6 @@ export default function Form() {
                                            name='text' {...register("description")}/>
                                 </label>
                                 <div className="form-general__submit"
-                                onClick={() => setActive(true)}
                                 >
                                     <input type="submit"
                                            className="form-general__btn"
