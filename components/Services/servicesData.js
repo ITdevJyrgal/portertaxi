@@ -11,7 +11,7 @@ const ServicesData = [
         img: por,
         title:"Портер",
         item:"У нас имеются 20 портеров",
-        desc:"500 сом/час"
+        desc:"600 сом/час"
     },
     {
         id: 2,

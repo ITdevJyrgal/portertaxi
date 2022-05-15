@@ -16,7 +16,7 @@ export default function Rates() {
                                 </div>
                                 <div className="rates-general__block2">
                                     <p>По городу часовая оплата</p>
-                                    <p>500/час</p>
+                                    <p>600/час</p>
                                 </div>
                                 <div className="rates-general__block3">
                                     <p>Чон-Арык,Орто-Сай</p>
